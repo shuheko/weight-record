@@ -1,0 +1,10 @@
+<div class="contents row">
+  <div class="container">
+    <h3>体重を保存する</h3>
+    <%= form_with(model: @weight, local: true) do |form| %>
+      <%= form.text_field :valid, placeholder: "体重(kg)" %>
+      <%= form.text_field :date, placeholder: "日時(日目)" %>
+      <%= form.submit "SEND" %>
+    <% end %>
+  </div>
+</div>
