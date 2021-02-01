@@ -1,2 +1,10 @@
-<h1>Weights#index</h1>
-<p>Find me in app/views/weights/index.html.erb</p>
+<div class="contents">
+  <% @weights.each do |weight| %>
+    <div class="date">
+      <p><%= weight.date %>日目</p>
+    </div>
+    <div class="value">
+      <p><%= weight.value %>kg</p>
+    </div>
+  <% end %>
+</div>
