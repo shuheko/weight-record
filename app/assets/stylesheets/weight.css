@@ -1,0 +1,17 @@
+.contents {
+  padding:10px;
+
+}
+.date {
+  border: 1px black solid;
+  padding: 10px;
+  float: left;
+}
+.value {
+  border: 1px black solid;
+  padding: 10px;
+  width:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
