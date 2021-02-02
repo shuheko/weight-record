@@ -5,6 +5,10 @@
     </div>
     <div class="value">
       <p><%= weight.value %>kg</p>
+
+    </div>
+    <div class="destroy">
+      <%= link_to '　削除', weight_path(weight.id), method: :delete %>
     </div>
   <% end %>
 </div>
