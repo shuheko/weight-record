@@ -11,6 +11,11 @@ class WeightsController < ApplicationController
     Weight.create(weight_params)
   end
 
+  def destroy
+    weight = Weight.find(params[:id])
+    weight.destroy
+  end
+
   private
 
   def weight_params
