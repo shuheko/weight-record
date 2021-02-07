@@ -1,4 +1,5 @@
 <div class="contents row">
+  <%= line_chart @weights.chart_date, width: "800px", height: "300px",label: "体重記録",xtitle: "日付",ytitle: "体重(kg)"%>
   <% @weights.each do |weight| %>
     <% if user_signed_in? && current_user.id == weight.user_id %>
       <div class="date">
@@ -6,7 +7,6 @@
       </div>
       <div class="value">
         <p><%= weight.value %>kg</p>
-
       </div>
       <div class="destroy">
         <%= link_to '　削除', weight_path(weight.id), method: :delete %>
