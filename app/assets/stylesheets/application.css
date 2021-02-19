@@ -16,3 +16,17 @@
  * {
   box-sizing: border-box;
 }
+
+
+.grid-6 {
+  text-align : center;
+  font-size: 52px;
+  background-color: greenyellow;
+  text-decoration: none;
+}
+
+.post {
+  font-size: 25px;
+  background-color: white;
+  text-decoration: none;
+}
