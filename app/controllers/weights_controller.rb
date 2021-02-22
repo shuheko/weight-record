@@ -1,6 +1,9 @@
 class WeightsController < ApplicationController
   def index
     @weights = current_user.weights
+    @first_weight = @weights.where(date: 1).pluck(:value)
+    @progress = @weights.maximum(:date)
+    @hoge = @weights.where(:id).maximum(:date).pluck(:value)
   end
 
   def new
