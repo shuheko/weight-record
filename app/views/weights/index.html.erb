@@ -2,6 +2,9 @@
   <div class="line_chart">
     <%= line_chart @weights.chart_date, width: "90%", height: "500px",label: "体重記録",xtitle: "日付",ytitle: "体重(kg)"%>
   </div>
+  <%# <div class="progress">
+      <%# <p><%= @progress %>日経過⭐️<%= @newest_weight %>キロ</p> %>
+  </div> %>
   <div class="data">
     <% @weights.each do |weight| %>
       <% if user_signed_in? && current_user.id == weight.user_id %>

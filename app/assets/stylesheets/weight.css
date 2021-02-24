@@ -4,6 +4,13 @@
 .data{
   margin-left: 25%;
 }
+
+.progress{
+  border-bottom: solid 3px #87CEFA;
+  text-align: center;
+  font-size: 25px;
+  margin: 15px;
+}
 .date {
   border: 1px black solid;
   padding: 10px;
