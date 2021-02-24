@@ -3,8 +3,8 @@ class WeightsController < ApplicationController
     @weights = current_user.weights
     @first_weight = @weights.where(date: 1).pluck(:value).to_s
     @progress = @weights.maximum(:date)
-    @newest_weight = @weights.where(id: @weights.maximum(:date)).pluck(:value).to_s
-    @hoge = @newest_weight-@first_weight
+    # @newest_weight = @weights.where(id: @weights.maximum(:date)).pluck(:value).to_s
+    # @hoge = @newest_weight-@first_weight
   end
 
   def new
